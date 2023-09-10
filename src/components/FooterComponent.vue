@@ -1,61 +1,61 @@
 <template>
-    <footer class="modern-footer">
-      <!-- Contenido del pie de página -->
-    <div class="footer-content">
-        <div class="contact-info">
-            <h3>Contacto</h3>
-            <p><i class="fas fa-phone"></i> +1234567890</p>
-            <p><i class="fas fa-envelope"></i> info@example.com</p>
-         </div>
-        <div class="social-links">
-            <h3>Síguenos</h3>
-            <a href="https://wa.me/1234567890" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
-            <a href="mailto:info@example.com" target="_blank"><i class="far fa-envelope"></i> Correo Electrónico</a>
-        </div>
+ <footer :style="{ backgroundColor: colorPrimary, color: 'white', padding: '20px' }">
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+      <div>
+        <h3>¡Síguenos en las redes sociales!</h3>
+        <p>Descubre las mejores ofertas y destinos.</p>
+        <ul style="list-style-type: none; padding: 0;">
+          <li style="margin-bottom: 10px;"><a href="#" style="text-decoration: none; color: white;">Facebook</a></li>
+          <li style="margin-bottom: 10px;"><a href="#" style="text-decoration: none; color: white;">Twitter</a></li>
+          <li style="margin-bottom: 10px;"><a href="#" style="text-decoration: none; color: white;">Instagram</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contacto</h3>
+        <p>Teléfono: 123-456-789</p>
+        <p>Correo electrónico: info@tudominio.com</p>
+      </div>
     </div>
-    
-    </footer>
+    <div style="text-align: center; margin-top: 20px;">
+      <p>&copy; 2023 Nosotros Turismo. Todos los derechos reservados.</p>
+    </div>
+  </footer>
   </template>
   
   <script>
   export default {
-    name: 'FooterComponet'
+    name: 'FooterComponet',
+    data() {
+    return {
+      colorPrimary: '#1746a2',
+    };
+  },
   }
   </script>
   
   <style scoped>
     /* Estilos específicos del pie de página */
-    .footer-content {
-        display: flex;
-        justify-content: space-around;
-    }
+    footer {
+  background-color: var(--color-primary);
+  opacity: .6;
+  color: white;
+  padding: 20px;
+}
 
-    .contact-info, .social-links {
-        flex: 1;
-        margin: 10px;
-    }
+ul {
+  list-style-type: none;
+  padding: 0;
+}
 
-    .contact-info h3, .social-links h3 {
-        font-size: 1.2rem;
-    }
+ul li {
+  margin-bottom: 10px;
+}
 
-    .contact-info p, .social-links a {
-        font-size: 1rem;
-        margin: 5px 0;
-    }
-
-    .contact-info i, .social-links i {
-        margin-right: 5px;
-    }
-
-    .social-links a {
-        color: #fff;
-        text-decoration: none;
-    }
-
-    .social-links a:hover {
-        text-decoration: underline;
-    }
+a {
+  text-decoration: none;
+  color: white;
+  opacity: 1;
+}
 
 
   </style>
