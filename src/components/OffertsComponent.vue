@@ -1,5 +1,5 @@
 <template>
-    <div class="offert">
+    
       <!-- Contenido de la oferta -->
       <section class="offerts">
             <h2>Ofertas de Paquetes Turísticos</h2>
@@ -40,7 +40,7 @@
                 <a href="pagina-oferta-6.html">Ver más</a>
             </div>
         </section>
-    </div>
+    
   </template>
   
   <script>
@@ -124,12 +124,6 @@
         animation: vibrar 0.3s ;   
         opacity: 1;
     }
-    /* Estilos para el footer */
-    .modern-footer {
-        background-color: var(--color-accent);
-        opacity: .8;        
-        color: #fff;
-        padding: 20px 0;
-        text-align: center;
-    }
+   
+  
   </style>

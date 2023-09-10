@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="body">
     <HeaderComponent />
     <main>
       <BannerComponent />
@@ -28,12 +28,12 @@ components: {
 
 <style scoped>
 /* Estilos específicos de la página de inicio */
-body {
+.body {
 
 font-family: 'Roboto', sans-serif;
 margin: 0;
 padding: 0;
-/*background-image: url('..\assets\images\playaMuelle.jpg');*/
+background-image: url('../assets/images/playaMuelle.jpg');
 background-size: cover; /* Ajusta la imagen al tamaño del viewport */
 background-attachment: fixed; /* Fija la imagen de fondo para que no se desplace con el contenido */
 }
