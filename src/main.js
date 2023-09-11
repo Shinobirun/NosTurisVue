@@ -1,23 +1,8 @@
-import { createApp } from 'vue'
-import App from './App.vue'
-import { createRouter, createWebHistory } from 'vue-router';  // Importa createRouter y createWebHistory
-import Home from '@/views/HomeView.vue'
-import './assets/css/Variables.css';
-
-const routes = [
-  {
-    path: '/',
-    name: 'Home',
-    component: Home
-  }
-  // Agrega más rutas aquí si es necesario
-];
-
-const router = createRouter({
-  history: createWebHistory(),
-  routes
-});
+import { createApp } from 'vue';
+import App from './App.vue';
+import router from './router/routes.js'; 
+import '@/assets/css/Variables.css';
 
 createApp(App)
-  .use(router)
-  .mount('#app')
+  .use(router) // Usa el enrutador
+  .mount('#app'); // Monta la aplicación en el elemento con ID "app"

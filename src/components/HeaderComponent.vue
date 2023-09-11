@@ -8,7 +8,7 @@
                 <li><a href="#"><img src="../assets/images/icons/travelling_2060284.png" alt="Inicio"> Inicio</a></li>
                 <li><a href="#"><img src="../assets/images/icons/map_1934285.png" alt="Tours"> Tours</a></li>
                 <li><a href="#"><img src="../assets/images/icons/reception_1934306.png" alt="Contacto"> Contacto</a></li>
-                <li><a href="#"><img src="../assets/images/icons/rating_1934299.png" alt="Registrarse"> Registrarse</a></li>
+                <li><a href="/registro"><img src="../assets/images/icons/rating_1934299.png" alt="Registrarse"> Registrarse</a></li>
                 <li><a href="#"><img src="../assets/images/icons/luggage_1934282.png" alt="Iniciar sesión"> Iniciar sesión</a></li>
             </ul>
         </nav>
@@ -22,6 +22,7 @@
   </script>
   
   <style scoped>
+     @import '@/assets/css/Variables.css';
      header {
         display: grid;
         grid-template-columns: 1fr auto; /* Divide el espacio en dos columnas, una para el logo y otra para el menú */
