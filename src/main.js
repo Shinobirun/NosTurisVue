@@ -1,6 +1,7 @@
 import { createApp } from 'vue';
 import App from './App.vue';
-import router from './router/routes.js'; // Importa el enrutador
+import router from './router/routes.js'; 
+import '@/assets/css/Variables.css';
 
 createApp(App)
   .use(router) // Usa el enrutador

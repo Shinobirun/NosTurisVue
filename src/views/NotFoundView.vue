@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Error 404 - Página no encontrada</h1>
+    <img src="../assets/images/registro/404not2.jpg" alt="Pagina no encontrada" class="notFound">
   </div>
 </template>
 
@@ -10,11 +10,16 @@ export default {
   mounted() {
     setTimeout(() => {
       this.$router.push({ name: "Home" }); // Asegúrate de que "Home" sea el nombre correcto de tu ruta de inicio
-    }, 5000); // Espera 5 segundos antes de redirigir
+    }, 3000); // Espera 5 segundos antes de redirigir
   },
 };
 </script>
 
 <style scoped>
-/* Estilos específicos si los necesitas */
+
+.notFound{
+  height: 100vh;
+}
+
+ 
 </style>

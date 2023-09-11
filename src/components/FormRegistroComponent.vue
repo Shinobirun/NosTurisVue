@@ -27,6 +27,7 @@
   </template>
   
   <style scoped>
+   
   .registration-container {
     display: flex;
     justify-content: center;
@@ -36,10 +37,10 @@
   }
   
   .registration-form {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: var(--color-backForm1);
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 10px var(--color-shadowForm1);
     width: 50%;
     text-align: center;
     margin-right: 20px;
@@ -74,7 +75,7 @@
   input[type="password"] {
     width: 90%;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--color-border1);
     border-radius: 5px;
     padding-left: 10px;
   }
@@ -84,7 +85,7 @@
   input[type="password"]:hover {
     width: 90%;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--color-border1);
     border-radius: 5px;
     padding-left: 10px;
     background-color: var(--color-accent);
@@ -94,7 +95,7 @@
   button[type="submit"] {
     grid-column: span 2;
     background-color: var(--color-primary);
-    color: #ffffff;
+    color: var(--color-text1);
     height: 30px;
     border: none;
     border-radius: 5px;

@@ -22,6 +22,7 @@
   </script>
   
   <style scoped>
+     @import '@/assets/css/Variables.css';
      header {
         display: grid;
         grid-template-columns: 1fr auto; /* Divide el espacio en dos columnas, una para el logo y otra para el menú */
