@@ -22,7 +22,7 @@
 
 <style scoped>
 /* Estilos específicos de la página de inicio */
- div {
+ div    {
 
   font-family: 'Roboto', sans-serif;
   margin: 0;
