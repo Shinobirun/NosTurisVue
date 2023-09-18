@@ -12,17 +12,17 @@
                 <li @click="abrirModal"><a href="#"><img src="../assets/images/icons/luggage_1934282.png" alt="Iniciar sesión"> Iniciar sesión</a></li>
             </ul>
         </nav>
-        <LoginModal v-if="mostrarModal" @close="cerrarModal" />   
+        <LoginModalComponent v-show="mostrarModal" @close="cerrarModal" />   
     </header>
   </template>
   
   <script>
-  import LoginModal from './LoginModalComponent.vue';
+  import LoginModalComponent from './LoginModalComponent.vue';
 
     export default {
     name: 'HeaderComponent',
     components: {
-        LoginModal
+        LoginModalComponent
     },
     data() {
         return {
@@ -52,6 +52,7 @@
         background-color: var(--color-accent);
         opacity: 1;
         padding: 10px 0;
+       
     }   
 
     header:hover {
