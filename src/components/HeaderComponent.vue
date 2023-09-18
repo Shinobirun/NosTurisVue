@@ -6,19 +6,41 @@
         <nav>
             <ul>
                 <li><a href="/"><img src="../assets/images/icons/travelling_2060284.png" alt="Inicio"> Inicio</a></li>
-                <li><a href="#"><img src="../assets/images/icons/map_1934285.png" alt="Tours"> Tours</a></li>
-                <li><a href="#"><img src="../assets/images/icons/reception_1934306.png" alt="Contacto"> Contacto</a></li>
+                <li><a href="/tours"><img src="../assets/images/icons/map_1934285.png" alt="Tours"> Tours</a></li>
+                <li><a href="/contacto"><img src="../assets/images/icons/reception_1934306.png" alt="Contacto"> Contacto</a></li>
                 <li><a href="/registro"><img src="../assets/images/icons/rating_1934299.png" alt="Registrarse"> Registrarse</a></li>
-                <li><a href="#"><img src="../assets/images/icons/luggage_1934282.png" alt="Iniciar sesión"> Iniciar sesión</a></li>
+                <li @click="abrirModal"><a href="#"><img src="../assets/images/icons/luggage_1934282.png" alt="Iniciar sesión"> Iniciar sesión</a></li>
             </ul>
         </nav>
+        <LoginModal v-if="mostrarModal" @close="cerrarModal" />   
     </header>
   </template>
   
   <script>
-  export default {
-    name: 'HeaderComponent'
-  }
+  import LoginModal from './LoginModalComponent.vue';
+
+    export default {
+    name: 'HeaderComponent',
+    components: {
+        LoginModal
+    },
+    data() {
+        return {
+        mensaje: 'Componente Contacto',
+        mostrarModal: false 
+        };
+    },
+    methods: {
+        abrirModal() {
+        this.mostrarModal = true;
+        console.log(this.mostrarModal);
+        },
+        cerrarModal() {
+        this.mostrarModal = false;
+        console.log(this.mostrarModal);
+        }
+    }
+}
   </script>
   
   <style scoped>
