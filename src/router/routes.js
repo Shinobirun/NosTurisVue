@@ -2,6 +2,8 @@ import { createRouter, createWebHistory } from 'vue-router';
 import Home from '@/views/HomeView.vue';
 import NotFound from '@/views/NotFoundView.vue';
 import RegistroView from '@/views/RegistroView.vue';
+import ContactoView from '@/views/ContactoView.vue';
+import ToursView from '@/views/ToursView.vue';
 
 
 const routes = [
@@ -14,6 +16,16 @@ const routes = [
     path: '/registro', 
     name: 'Registro',
     component: RegistroView // Asegúrate de que este sea el nombre correcto del componente
+  },
+  {
+    path: '/contacto', 
+    name: 'Contacto',
+    component: ContactoView // Asegúrate de que este sea el nombre correcto del componente
+  },
+  {
+    path: '/tours', 
+    name: 'Tours',
+    component: ToursView, // Asegúrate de que este sea el nombre correcto del componente
   },
   {
     path: '/:catchAll(.*)',
