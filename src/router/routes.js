@@ -25,7 +25,7 @@ const routes = [
   {
     path: '/tours', 
     name: 'Tours',
-    component: ToursView // Asegúrate de que este sea el nombre correcto del componente
+    component: ToursView, // Asegúrate de que este sea el nombre correcto del componente
   },
   {
     path: '/:catchAll(.*)',
