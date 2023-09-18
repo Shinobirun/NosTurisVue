@@ -2,34 +2,36 @@
     <div class="body">
         <HeaderComponent />
     <main>
-        <h1>{{ mensaje }}</h1>
-        <button @click="irAHome">Ir a Home</button>
+        <ContactFormComponent ></ContactFormComponent>
     </main>
     <FooterComponent />
     </div>
   </template>
   
-  <script>
+<script>
   
   import HeaderComponent from '@/components/HeaderComponent.vue';
-import FooterComponent from '../components/FooterComponent.vue'; 
+  import FooterComponent from '../components/FooterComponent.vue'; 
+  import ContactFormComponent from '@/components/ContactFormComponent.vue';
 
-export default {
-  name: 'ToursView',
-  components: {
-    HeaderComponent,
-    FooterComponent
-  },
-  data() {
-    return {
-      mensaje: 'Componente Contacto'
-    };
-  },
-  methods: {
-    irAHome() {
-      this.$router.push({ path: '/' });
+
+  export default {
+    name: 'ToursView',
+    components: {
+      HeaderComponent,
+      ContactFormComponent,
+      FooterComponent
+    },
+    data() {
+      return {
+        mensaje: 'Componente Contacto'
+      };
+    },
+    methods: {
+      irAHome() {
+        this.$router.push({ path: '/' });
+      }
     }
-  }
 }
   </script>
   

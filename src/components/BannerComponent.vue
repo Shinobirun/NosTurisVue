@@ -1,7 +1,7 @@
   <template>
     <section class="banner">
       <!-- Contenido del banner -->
-      <img src="../assets/images/boeing-159589_1280.png" alt="Banner de promoción">
+      <img src="../assets/images/welcome-aboard-2334166_1280.jpg" alt="Banner de promoción">
     </section>
   </template>
 
