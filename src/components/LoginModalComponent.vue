@@ -1,5 +1,5 @@
 <template>
-    <div class="modal" v-if="mostrarModal">
+    <div class="modal" v-show="mostrarModal">
         <!-- Contenido de inicio de sesión -->
         <div class="modal-content">
             <h2>Iniciar Sesión</h2>
@@ -14,7 +14,7 @@
   
   <script>
   export default {
-  name: 'LoginModal',
+  name: 'LoginModalComponent',
   data() {
     return {
       mostrarModal: false
@@ -37,17 +37,16 @@
   
   <style scoped>
   /* Estilos para el modal */
-.modal {
+  .modal {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100%; /* Aprovecha todo el ancho del viewport */
+  height: 100%; /* Aprovecha toda la altura del viewport */
   background: rgba(0, 0, 0, 0.5);
   display: flex;
-  justify-content: center;
-  align-items: center;
-  
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
 }
 
 .modal-content {
