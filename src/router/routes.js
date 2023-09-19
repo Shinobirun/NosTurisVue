@@ -4,33 +4,47 @@ import NotFound from '@/views/NotFoundView.vue';
 import RegistroView from '@/views/RegistroView.vue';
 import ContactoView from '@/views/ContactoView.vue';
 import ToursView from '@/views/ToursView.vue';
+import RelaxComponent from '../components/RelaxComponent.vue';
+import RomanticComponent from '../components/RomanticComponent.vue';
 
 
 const routes = [
   {
-    path: '/',  
+    path: '/',
     name: 'Home',
     component: Home
   },
   {
-    path: '/registro', 
+    path: '/registro',
     name: 'Registro',
     component: RegistroView // Asegúrate de que este sea el nombre correcto del componente
   },
   {
-    path: '/contacto', 
+    path: '/contacto',
     name: 'Contacto',
     component: ContactoView // Asegúrate de que este sea el nombre correcto del componente
   },
   {
-    path: '/tours', 
+    path: '/tours',
     name: 'Tours',
     component: ToursView, // Asegúrate de que este sea el nombre correcto del componente
   },
   {
     path: '/:catchAll(.*)',
-    name: 'NotFound', 
+    name: 'NotFound',
     component: NotFound,
+  },
+  {
+    path: '/relax',
+    name: 'Relax',
+    component: RelaxComponent
+  
+  },
+  {
+    path: '/romantic',
+    name: 'Romantic',
+    component: RomanticComponent
+  
   },
   // Agrega más rutas aquí si es necesario
 ];
