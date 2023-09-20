@@ -103,21 +103,20 @@
     }
 
     .logo img {
-        max-width: 100px; /* Tamaño máximo del logo en píxeles */
+        max-width: 100px; 
         height: auto;
         
     }
 
-    /* Estilos para la sección de ofertas */
+
  
    
 
     .offert img {
-        max-width: 100%; /* Ajusta el ancho máximo al 100% para que todas las imágenes se redimensionen automáticamente */
-        height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
-        width: 100%; /* Añade esto para asegurarte de que el ancho sea del 100% del contenedor */
-        max-height: 200px; /* Establece la altura máxima deseada en píxeles */
-    }
+        max-width: 100%;
+        height: auto;
+        width: 100%; 
+        max-height: 200px;
 
     @keyframes cambiaColor {
         0% {
@@ -132,11 +131,24 @@
           color:#0f0102;
         }
       }
+    }
 
-    /* Aplicar animación de vibración al hacer hover sobre las ofertas */
+  
     .offert:hover {
-        animation: vibrar 0.3s ;   
+         
         opacity: 1;
+    }
+
+    .offert button {
+      color: var(--color-primary);
+            text-decoration: none;
+            font-weight: bold;
+    }
+
+    .offert button :hover {
+      color: var(--color-primary);
+            text-decoration: none;
+            font-weight: bold;
     }
    
   

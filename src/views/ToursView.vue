@@ -18,6 +18,8 @@
     <RomanticComponent v-if="filtro === 'romantico'"></RomanticComponent>
     <RelaxComponent v-if="filtro === 'todos'"></RelaxComponent>
     <RomanticComponent v-if="filtro === 'todos'"></RomanticComponent>
+
+    <WhatsappComponent></WhatsappComponent>
     </main>
     
     <FooterComponent />
@@ -30,6 +32,7 @@
 import FooterComponent from '../components/FooterComponent.vue'; 
 import RelaxComponent from '../components/RelaxComponent.vue';
 import RomanticComponent from '../components/RomanticComponent.vue';
+import WhatsappComponent from '@/components/WhatsappComponent.vue';
 
 export default {
   name: 'ToursView',
@@ -37,6 +40,7 @@ export default {
     HeaderComponent,
     FooterComponent,
     RelaxComponent,
+    WhatsappComponent,
     RomanticComponent,
   },
   data() {

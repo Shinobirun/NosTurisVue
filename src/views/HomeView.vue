@@ -5,18 +5,20 @@
       <BannerComponent />
       <OffertComponent @ver-detalles="mostrarDetalles" />
       <DetailsComponent v-if="mostrarDetalles" :ofertaSeleccionada="ofertaSeleccionada" @volver="ocultarDetalles" />
+      <WhatsappComponent></WhatsappComponent>
     </main>
     <FooterComponent />
   </div>
 </template>
 
 
-<script>
+<script>  
 import HeaderComponent from '@/components/HeaderComponent.vue'
 import BannerComponent from '@/components/BannerComponent.vue'
 import OffertComponent from '@/components/OffertsComponent.vue'
 import FooterComponent from '@/components/FooterComponent.vue'
 import DetailsComponent from '@/components/DetailsComponent.vue'
+import WhatsappComponent from '@/components/WhatsappComponent.vue'
 
 export default {
 name: 'HomeView',
@@ -24,6 +26,7 @@ components: {
   HeaderComponent,
   BannerComponent,
   OffertComponent,
+  WhatsappComponent,
   FooterComponent,
   DetailsComponent
 },
