@@ -3,17 +3,20 @@
     <HeaderComponent />
     <main>
       <BannerComponent />
-      <OffertComponent />
-      </main>
+      <OffertComponent @ver-detalles="mostrarDetalles" />
+      <DetailsComponent v-if="mostrarDetalles" :ofertaSeleccionada="ofertaSeleccionada" @volver="ocultarDetalles" />
+    </main>
     <FooterComponent />
   </div>
 </template>
+
 
 <script>
 import HeaderComponent from '@/components/HeaderComponent.vue'
 import BannerComponent from '@/components/BannerComponent.vue'
 import OffertComponent from '@/components/OffertsComponent.vue'
 import FooterComponent from '@/components/FooterComponent.vue'
+import DetailsComponent from '@/components/DetailsComponent.vue'
 
 export default {
 name: 'HomeView',
@@ -21,8 +24,27 @@ components: {
   HeaderComponent,
   BannerComponent,
   OffertComponent,
-  FooterComponent
-}
+  FooterComponent,
+  DetailsComponent
+},
+
+data() {
+    return {
+      mensaje: 'Componente Turismo',
+      mostrarDetalles: false,
+      ofertaSeleccionada: null
+    };
+  },
+  methods: {
+    mostrarDetails(oferta) {
+      this.mostrarDetalles = true;  
+      this.ofertaSeleccionada = oferta;
+    },
+    ocultarDetalles() {
+      this.mostrarDetalles = false;
+      this.ofertaSeleccionada = null;
+    }
+  }
 }
 </script>
 
