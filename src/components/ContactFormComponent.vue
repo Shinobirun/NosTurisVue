@@ -28,11 +28,11 @@
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.8253499187767!2d-58.423588810360314!3d-34.58328548669217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb581f543de5d%3A0x192f65363601ef13!2sAv.%20Sta.%20Fe%203954-3902%2C%20C1425BHB%20CABA!5e0!3m2!1ses-419!2sar!4v1695125649356!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
 
-      <div class="whatsapp-button">
-  <a href="https://api.whatsapp.com/send?phone=1167126268" target="_blank">
-    <img src="../assets/images/icons/Whatsapp_37229.png   " alt="WhatsApp">
-  </a>
-</div>
+      <div>
+        <WhatsappComponent></WhatsappComponent>
+      </div>
+
+
 
       </div>
       
@@ -41,7 +41,16 @@
   </template>
   
   <script>
+
+  import WhatsappComponent from './WhatsappComponent.vue';
+
+
   export default {
+
+    components: {
+      WhatsappComponent
+  
+    },
     data() {
       return {
         nombre: '',
@@ -71,7 +80,9 @@
         })
         .catch(error => console.error('Error:', error));
       }
-    }
+    },
+
+    
   };
   </script>
 
@@ -93,12 +104,14 @@
 
 .iframe {
   background-color: var(--color-backForm1);
-  width: 90%;
+  width: 98.5%;
   padding: 10px;
+  
 }
 
 .iframe iframe {
   width: 100%;
+  
 }
 
 
