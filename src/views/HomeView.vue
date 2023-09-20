@@ -4,7 +4,7 @@
     <main>
       <BannerComponent />
       <OffertComponent />
-    </main>
+      </main>
     <FooterComponent />
   </div>
 </template>

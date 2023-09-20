@@ -4,6 +4,8 @@
     <main>
         <h1>{{ mensaje }}</h1>
         <button @click="irAHome">Ir a Home</button>
+        <RelaxComponent></RelaxComponent> 
+        <RomanticComponent></RomanticComponent>
     </main>
     <FooterComponent />
     </div>
@@ -11,14 +13,18 @@
   
   <script>
   
-  import HeaderComponent from '@/components/HeaderComponent.vue';
+  import HeaderComponent from '../components/HeaderComponent.vue';
 import FooterComponent from '../components/FooterComponent.vue'; 
+import RelaxComponent from '../components/RelaxComponent.vue';
+import RomanticComponent from '../components/RomanticComponent.vue';
 
 export default {
   name: 'ToursView',
   components: {
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    RelaxComponent,
+    RomanticComponent,
   },
   data() {
     return {
