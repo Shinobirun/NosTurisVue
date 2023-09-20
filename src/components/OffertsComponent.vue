@@ -1,53 +1,67 @@
 <template>
-    
-      <!-- Contenido de la oferta -->
-      <section class="offerts">
-            <h2>Ofertas de Paquetes Turísticos</h2>
-            <div class="offert">
-                <img src="../assets/images/turismoavent1.jpg" alt="Oferta 1">
-                <h3>Paquete Aventura</h3>
-                <p>Explora lugares increíbles con nuestra oferta de aventura.</p>
-                <a href="pagina-oferta-1.html">Ver más</a>
-            </div>
-            <div class="offert">
-                <img src="../assets/images/relaxplay2.jpg" alt="Oferta 2">
-                <h3>Paquete Relax</h3>
-                <p>Relájate y rejuvenece en destinos paradisíacos.</p>
-                <a href="pagina-oferta-2.html">Ver más</a>
-            </div>
-            <div class="offert">
-                <img src="../assets/images/avent2playa.jpg" alt="Oferta 3">
-                <h3>Paquete Aventura Plus   </h3>
-                <p>Descubre aventuras emocionantes en todo el mundo.</p>
-                <a href="pagina-oferta-3.html">Ver más</a>
-            </div>
-            <div class="offert">
-                <img src="../assets/images/romantplaya.jpg" alt="Oferta 4">
-                <h3>Paquete Romántico</h3>
-                <p>Vive momentos inolvidables en destinos románticos.</p>
-                <a href="pagina-oferta-4.html">Ver más</a>
-            </div>
-            <div class="offert">
-                <img src="../assets/images/playa.jpg" alt="Oferta 5">
-                <h3>Paquete Playa</h3>
-                <p>Relájate en las playas más hermosas del mundo.</p>
-                <a href="pagina-oferta-5.html">Ver más</a>
-            </div>
-            <div class="offert">
-                <img src="../assets/images/pesca.jpg" alt="Oferta 6">
-                <h3>Paquete pesca</h3>
-                <p>Sumérgete en la cultura y la historia de diferentes lugares.</p>
-                <a href="pagina-oferta-6.html">Ver más</a>
-            </div>
-        </section>
-    
+    <section class="offerts">
+      <h2>Ofertas de Paquetes Turísticos</h2>
+      <div v-for="(oferta, index) in ofertas" :key="index" class="offert">
+        <img :src="oferta.imagen" :alt="'Oferta ' + (index + 1)">
+        <h3>{{ oferta.titulo }}</h3>
+        <p>{{ oferta.descripcion }}</p>
+        <button @click="verDetalles(oferta)">Ver más</button>
+      </div>
+    </section>
   </template>
   
-  <script>
-  export default {
-    name: 'OffertComponent'
+<script>
+   export default {
+  name: 'OffertComponent',
+  data() {
+    return {
+      ofertas: [
+        {
+          titulo: 'Paquetes Aventuras',
+          descripcion: 'Explora lugares increíbles con nuestra oferta de aventura.',
+          imagen: require('@/assets/images/turismoavent1.jpg')
+        },
+        {
+          titulo: 'Paquetes Relax',
+          descripcion: 'Relájate y rejuvenece en destinos paradisíacos.',
+          imagen: require('@/assets/images/relaxplay2.jpg')
+        },
+        {
+          titulo: 'Paquetes Aventuras Plus',
+          descripcion: 'Descubre aventuras emocionantes en todo el mundo.',
+          imagen: require('@/assets/images/avent2playa.jpg')
+        },
+        {
+          titulo: 'Paquetes Románticos',
+          descripcion: 'Vive momentos inolvidables en destinos románticos.',
+          imagen: require('@/assets/images/romantplaya.jpg')
+        },
+        {
+          titulo: 'Paquetes Playas',
+          descripcion: 'Relájate en las playas más hermosas del mundo.',
+          imagen: require('@/assets/images/playa.jpg')
+        },
+        {
+          titulo: 'Paquetes Pesca',
+          descripcion: 'Descubre la emoción de pescar en algunos de los destinos más espectaculares del mundo.',
+          imagen: require('@/assets/images/pesca.jpg')
+        }
+        
+        // Agrega más ofertas según sea necesario
+      ]
+    };
+  },
+  methods: {
+    verDetalles(oferta) {
+      console.log('Ruta de la imagen:', oferta.imagen);
+      this.$emit('ver-detalles', oferta);
+    }
   }
-  </script>
+}
+
+
+</script>
+
   
   <style scoped>
     /* Estilos específicos de la oferta */

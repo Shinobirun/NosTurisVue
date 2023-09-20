@@ -2,11 +2,24 @@
     <div class="body">
         <HeaderComponent />
     <main>
-        <h1>{{ mensaje }}</h1>
-        <button @click="irAHome">Ir a Home</button>
-        <RelaxComponent></RelaxComponent> 
-        <RomanticComponent></RomanticComponent>
+
+  <div class="filtro">
+      <label>
+        <input type="radio" v-model="filtro" value="todos" name="modoFiltro"> Todos
+      </label>
+      <label>
+        <input type="radio" v-model="filtro" value="relax" name="modoFiltro"> Relax
+      </label>
+      <label>
+        <input type="radio" v-model="filtro" value="romantico" name="modoFiltro"> Romántico
+      </label>
+  </div>
+    <RelaxComponent v-if="filtro === 'relax'"></RelaxComponent> 
+    <RomanticComponent v-if="filtro === 'romantico'"></RomanticComponent>
+    <RelaxComponent v-if="filtro === 'todos'"></RelaxComponent>
+    <RomanticComponent v-if="filtro === 'todos'"></RomanticComponent>
     </main>
+    
     <FooterComponent />
     </div>
   </template>
@@ -28,12 +41,20 @@ export default {
   },
   data() {
     return {
-      mensaje: 'Componente Turismo'
+      mensaje: 'Componente Turismo',
+      filtro: 'todos'
     };
   },
   methods: {
-    irAHome() {
-      this.$router.push({ path: '/' });
+
+    filtrarRelax() {
+      this.filtro = 'relax';
+    },
+    filtrarRomantico() {
+      this.filtro = 'romantico';
+    },
+    mostrarTodos() {
+      this.filtro = 'todos';
     }
   }
 }
@@ -49,5 +70,14 @@ background-image: url('../assets/images/playaMuelle.jpg');
 background-size: cover; /* Ajusta la imagen al tamaño del viewport */
 background-attachment: fixed; /* Fija la imagen de fondo para que no se desplace con el contenido */
 }
-  /* Estilos específicos para este componente */
+
+.filtro {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.filtro label {
+  margin-right: 10px;
+}
+ 
   </style>
