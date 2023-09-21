@@ -1,4 +1,5 @@
 <template>
+
   <div class="body">
       <HeaderComponent />
   <main>
@@ -21,6 +22,34 @@
 
   <WhatsappComponent></WhatsappComponent>
   </main>
+
+    <div class="body">
+        <HeaderComponent />
+    <main>
+
+  <div class="filtro">
+      <label>
+        <input type="radio" v-model="filtro" value="todos" name="modoFiltro"> Todos
+      </label>
+      <label>
+        <input type="radio" v-model="filtro" value="relax" name="modoFiltro"> Relax
+      </label>
+      <label>
+        <input type="radio" v-model="filtro" value="romantico" name="modoFiltro"> Romántico
+      </label>
+  </div>
+    <RelaxComponent v-if="filtro === 'relax'"></RelaxComponent> 
+    <RomanticComponent v-if="filtro === 'romantico'"></RomanticComponent>
+    <RelaxComponent v-if="filtro === 'todos'"></RelaxComponent>
+    <RomanticComponent v-if="filtro === 'todos'"></RomanticComponent>
+
+    <WhatsappComponent></WhatsappComponent>
+    </main>
+    
+    <FooterComponent />
+    </div>
+  </template>
+
   
   <FooterComponent />
   </div>
@@ -35,6 +64,7 @@ import RomanticComponent from '../components/RomanticComponent.vue';
 import WhatsappComponent from '@/components/WhatsappComponent.vue';
 
 export default {
+
 name: 'ToursView',
 components: {
   HeaderComponent,
@@ -59,6 +89,33 @@ methods: {
   },
   mostrarTodos() {
     this.filtro = 'todos';
+
+  name: 'ToursView',
+  components: {
+    HeaderComponent,
+    FooterComponent,
+    RelaxComponent,
+    WhatsappComponent,
+    RomanticComponent,
+  },
+  data() {
+    return {
+      mensaje: 'Componente Turismo',
+      filtro: 'todos'
+    };
+  },
+  methods: {
+
+    filtrarRelax() {
+      this.filtro = 'relax';
+    },
+    filtrarRomantico() {
+      this.filtro = 'romantico';
+    },
+    mostrarTodos() {
+      this.filtro = 'todos';
+    }
+
   }
 }
 }
@@ -76,6 +133,7 @@ background-attachment: fixed; /* Fija la imagen de fondo para que no se desplace
 }
 
 .filtro {
+
 display: flex;
 margin-bottom: 20px;
 }
@@ -85,3 +143,14 @@ margin-right: 10px;
 }
 
 </style>
+=======
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.filtro label {
+  margin-right: 10px;
+}
+ 
+  </style>
+>>>>>>> master
