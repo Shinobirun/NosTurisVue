@@ -31,6 +31,8 @@ export default {
   max-width: 100%;  
   
 }
+
+
 .loader {
   
   position: absolute; /* Establece la posición absoluta */
@@ -40,8 +42,8 @@ export default {
   transform: rotateZ(45deg);
   perspective: 1000px;
   border-radius: 50%;
-  width: 48px;
-  height: 48px;
+  width: 60px;
+  height: 60px;
   color: #fff;
   z-index: 1;
   background-color:#e9ddc5;
@@ -118,6 +120,8 @@ export default {
           box-shadow: .2em -.2em 0 0 currentcolor;
         }
       }
+
+      
    
 
 

@@ -3,9 +3,12 @@
     <HeaderComponent />
     <main>
       <BannerComponent />
-      <OffertComponent @ver-detalles="mostrarDetalles" />
+      <component :is="componenteActual" @ver-detalles="mostrarDetails" />
       <DetailsComponent v-if="mostrarDetalles" :ofertaSeleccionada="ofertaSeleccionada" @volver="ocultarDetalles" />
       <WhatsappComponent></WhatsappComponent>
+      <div v-for="componente in componentesDisponibles" :key="componente">
+      <button @click="mostrarComponente(componente)">{{ componente }}</button>
+      </div>
     </main>
     <FooterComponent />
   </div>
@@ -19,6 +22,8 @@ import OffertComponent from '@/components/OffertsComponent.vue'
 import FooterComponent from '@/components/FooterComponent.vue'
 import DetailsComponent from '@/components/DetailsComponent.vue'
 import WhatsappComponent from '@/components/WhatsappComponent.vue'
+import RelaxComponent from '@/components/RelaxComponent.vue'
+import RomanticComponent from '@/components/RomanticComponent.vue'
 
 export default {
 name: 'HomeView',
@@ -28,21 +33,35 @@ components: {
   OffertComponent,
   WhatsappComponent,
   FooterComponent,
-  DetailsComponent
+  DetailsComponent,
+  RomanticComponent,
+  RelaxComponent
 },
 
 data() {
     return {
+     
+
       mensaje: 'Componente Turismo',
       mostrarDetalles: false,
-      ofertaSeleccionada: null
-    };
+      ofertaSeleccionada: null,
+      componentesDisponibles: ['OffertComponent', 'RelaxComponent', 'RomanticComponet',/* Agrega más nombres de componentes aquí según sea necesario */],
+      componenteActual: 'OffertComponent' 
+      };
   },
   methods: {
-    mostrarDetails(oferta) {
+    mostrarDetails(oferta, componente) {
       this.mostrarDetalles = true;  
       this.ofertaSeleccionada = oferta;
+      this.componenteActual = componente;
     },
+    mostrarComponente(componente) {
+    this.componenteActual = componente;
+    this.mostrarDetalles = false; // Esto es opcional, depende de tu lógica
+    this.ofertaSeleccionada = null;
+    },
+
+
     ocultarDetalles() {
       this.mostrarDetalles = false;
       this.ofertaSeleccionada = null;
