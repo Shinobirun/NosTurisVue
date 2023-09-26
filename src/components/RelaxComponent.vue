@@ -1,9 +1,9 @@
 
 <template>
-  <section class="offerts">
-    <h2 class="roboto-font">Paquete Relax <br> Tu Escape al Bienestar y Tranquilidad.<br>
-      Descubre la Serenidad de Nuestros Destinos Diseñados para Descansar y Recargar Energías.</h2>
-    <div class="offert">
+<section class="offerts">
+        <h2>Paquetes Relax</h2>
+
+        <div class="offert">
       <img src="../assets/images/maldivas.jpg" alt="Oferta Islas Maldivas">
       <h3>Islas Maldivas</h3>
       <p>Disfruta de unas vacaciones de ensueño en las hermosas Islas Maldivas, conocidas por sus playas de arena blanca,

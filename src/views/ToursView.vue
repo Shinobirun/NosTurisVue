@@ -1,71 +1,46 @@
 <template>
-    <div class="body">
-        <HeaderComponent />
-    <main>
-
-  <div class="filtro">
-      <label>
-        <input type="radio" v-model="filtro" value="todos" name="modoFiltro"> Todos
-      </label>
-      <label>
-        <input type="radio" v-model="filtro" value="relax" name="modoFiltro"> Relax
-      </label>
-      <label>
-        <input type="radio" v-model="filtro" value="romantico" name="modoFiltro"> Romántico
-      </label>
+  <div class="body">
+      <HeaderComponent />
+  <main>
+      <h1>{{ mensaje }}</h1>
+      <button @click="irAHome">Ir a Home</button>
+      <RelaxComponent></RelaxComponent> 
+      <RomanticComponent></RomanticComponent>
+  </main>
+  <FooterComponent />
   </div>
-    <RelaxComponent v-if="filtro === 'relax'"></RelaxComponent> 
-    <RomanticComponent v-if="filtro === 'romantico'"></RomanticComponent>
-    <RelaxComponent v-if="filtro === 'todos'"></RelaxComponent>
-    <RomanticComponent v-if="filtro === 'todos'"></RomanticComponent>
+</template>
 
-    <WhatsappComponent></WhatsappComponent>
-    </main>
-    
-    <FooterComponent />
-    </div>
-  </template>
-  
-  <script>
-  
-  import HeaderComponent from '../components/HeaderComponent.vue';
+<script>
+
+import HeaderComponent from '../components/HeaderComponent.vue';
 import FooterComponent from '../components/FooterComponent.vue'; 
 import RelaxComponent from '../components/RelaxComponent.vue';
 import RomanticComponent from '../components/RomanticComponent.vue';
-import WhatsappComponent from '@/components/WhatsappComponent.vue';
 
 export default {
-  name: 'ToursView',
-  components: {
-    HeaderComponent,
-    FooterComponent,
-    RelaxComponent,
-    WhatsappComponent,
-    RomanticComponent,
-  },
-  data() {
-    return {
-      mensaje: 'Componente Turismo',
-      filtro: 'todos'
-    };
-  },
-  methods: {
-
-    filtrarRelax() {
-      this.filtro = 'relax';
-    },
-    filtrarRomantico() {
-      this.filtro = 'romantico';
-    },
-    mostrarTodos() {
-      this.filtro = 'todos';
-    }
+name: 'ToursView',
+components: {
+  HeaderComponent,
+  FooterComponent,
+  RelaxComponent,
+  RomanticComponent,
+},
+data() {
+  return {
+    mensaje: 'Componente Turismo'
+  };
+},
+methods: {
+  irAHome() {
+    this.$router.push({ path: '/' });
   }
 }
-  </script>
-  
-  <style scoped>
-  .body {
+}
+</script>
+
+<style scoped>
+.body {
 
 font-family: 'Roboto', sans-serif;
 margin: 0;
@@ -74,14 +49,5 @@ background-image: url('../assets/images/playaMuelle.jpg');
 background-size: cover; /* Ajusta la imagen al tamaño del viewport */
 background-attachment: fixed; /* Fija la imagen de fondo para que no se desplace con el contenido */
 }
-
-.filtro {
-  display: flex;
-  margin-bottom: 20px;
-}
-
-.filtro label {
-  margin-right: 10px;
-}
- 
-  </style>
+/* Estilos específicos para este componente */
+</style>

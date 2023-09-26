@@ -7,7 +7,6 @@ import ToursView from '@/views/ToursView.vue';
 import RelaxComponent from '../components/RelaxComponent.vue';
 import RomanticComponent from '../components/RomanticComponent.vue';
 
-
 const routes = [
   {
     path: '/',
