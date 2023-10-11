@@ -3,9 +3,9 @@
         <h2>Tours Románticos</h2>
 
         <div class="offert">
-          <img src="@/assets/images/torre.jpg" alt="Francia">
+          <img src="../assets/images/torre.jpg" alt="Francia">
           <h3>Escapada romántica a París, Francia</h3>
-          <p>Experimenta una escapada romántica inolvidable en la ciudad del amor, París, Francia, durante 5 días y 4 noches en un hotel boutique con vista a la Torre Eiffel.</p>
+          <p>Experimenta una escapada romántica inolvidable en la ciudad del amor, París, Francia, durante 5 días y 4 noches en un hotel boutique con servicios de excelencia y vista a la Torre Eiffel.</p>
           <p>Algunas de las experiencias que podrás disfrutar en este viaje incluyen:</p>
           <ul>
             <li>Cena romántica en un crucero por el río Sena.<br></li>
@@ -14,19 +14,19 @@
             <li>Degustación de vinos y quesos en una bodega local.<br></li>
             <li>Romántico picnic en los Jardines de Luxemburgo.<br></li>
           </ul>
-          <p>Tu escapada romántica a París será una experiencia llena de amor, cultura y momentos inolvidables en la ciudad más romántica del mundo.</p>
+          <p>Tu escapada romántica a París será una experiencia llena de amor, cultura y momentos inolvidables en la ciudad más romántica y espectacular del mundo.</p>
           <a href="formulario.html">Solicitar Presupuesto</a>
         </div>
 
         <div class="offert">
-          <img src="@/assets/images/santoriniGrecia.jpg" alt="Grecia">
+          <img src="../assets/images/santoriniGrecia.jpg" alt="Grecia">
           <h3>Aventura en Santorini,<br> Grecia</h3>
           <p>Descubre la emocionante aventura en la hermosa isla de Santorini, Grecia, durante 7 días y 6 noches en una suite con vista al mar en Oia.</p>
           <p>Algunas de las experiencias que podrás disfrutar en este viaje incluyen:</p>
           <ul>
             <li>Tour en velero alrededor de la caldera.<br></li>
             <li>Cata de vinos en encantadores viñedos locales.<br></li>
-            <li>Cena en una auténtica taberna griega con música en vivo.<br></li>
+            <li>Cena en una auténtica taberna griega.<br></li>
             <li>Relajación en las pintorescas playas de arena negra.<br></li>
             <li>Exploración de antiguos sitios arqueológicos griegos.<br></li>
           </ul>
@@ -35,7 +35,7 @@
         </div>
 
         <div class="offert">
-          <img src="@/assets/images/boraBora.jpg" alt="Polinesia Francesa">
+          <img src="../assets/images/boraBora.jpg" alt="Polinesia Francesa">
           <h3>Experiencia tropical en Bora Bora, Polinesia Francesa</h3>
           <p>Experimenta la belleza tropical de Bora Bora, Polinesia Francesa, durante 8 días y 7 noches. Disfruta de un alojamiento de lujo en un bungalow sobre el agua en un resort de renombre.</p>
           <p>Algunas de las experiencias que podrás disfrutar en este viaje incluyen:</p>
@@ -43,7 +43,7 @@
             <li>Snorkeling en aguas cristalinas.<br></li>
             <li>Cena privada en la playa.<br></li>
             <li>Masajes en pareja en un spa de renombre.<br></li>
-            <li>Emocionante excursión en helicóptero sobre la isla.<br></li>
+            <li>Emocionante excursión en helicóptero.<br></li>
             <li>Kayak en las tranquilas lagunas de Bora Bora.<br></li>
             <li>Exploración de la cultura local y artesanía en mercados.<br></li>
           </ul>
@@ -52,14 +52,14 @@
         </div>
 
         <div class="offert">
-          <img src="@/assets/images/praga.jpg" alt="Praga">
+          <img src="../assets/images/praga.jpg" alt="Praga">
           <h3>Encanto histórico en Praga, República Checa</h3>
           <p>Experimenta el encanto histórico de Praga, República Checa, durante 6 días y 5 noches. Disfruta de un alojamiento de boutique en el casco antiguo de Praga.</p>
           <p>Algunas de las actividades incluidas en este paquete incluyen:</p>
           <ul>
             <li>Visita al castillo de Praga.<br></li>
             <li>Recorrido en carruaje por las calles adoquinadas.<br></li>
-            <li>Cena en un restaurante medieval.<br></li>
+            <li>Cena en un restaurante medieval con musica en vivo.<br></li>
             <li>Paseo en barco por el río Moldava.<br></li>
             <li>Exploración de la arquitectura gótica y barroca de la ciudad.<br></li>
             <li>Visitas a museos y galerías de arte.<br></li>

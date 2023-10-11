@@ -17,33 +17,33 @@
     return {
       ofertas: [
         {
-          titulo: 'Paquetes Aventuras',
-          descripcion: 'Explora lugares increíbles con nuestra oferta de aventura.',
+          titulo: 'Tours Aventura',
+          descripcion: 'Descubre la emoción en destinos épicos de todo el mundo con nuestra irresistible oferta de aventura.',
           imagen: require('@/assets/images/turismoavent1.jpg')
         },
         {
-          titulo: 'Paquetes Relax',
-          descripcion: 'Relájate y rejuvenece en destinos paradisíacos.',
+          titulo: 'Tours Relax',
+          descripcion: 'Relájate y rejuvenece en destinos paradisíacos disfrutando la serenidad de la naturaleza.',
           imagen: require('@/assets/images/relaxplay2.jpg')
         },
         {
-          titulo: 'Paquetes Aventuras Plus',
-          descripcion: 'Descubre aventuras emocionantes en todo el mundo.',
+          titulo: 'Tours Aventura Plus',
+          descripcion: 'Embárcate en emocionantes aventuras alrededor del mundo y descubre lugares asombrosos.',
           imagen: require('@/assets/images/avent2playa.jpg')
         },
         {
-          titulo: 'Paquetes Románticos',
-          descripcion: 'Vive momentos inolvidables en destinos románticos.',
+          titulo: 'Tours Románticos',
+          descripcion: 'Experimenta momentos inolvidables en lugares románticos y déjate abrazar por la magia del amor',
           imagen: require('@/assets/images/romantplaya.jpg')
         },
         {
-          titulo: 'Paquetes Playas',
-          descripcion: 'Relájate en las playas más hermosas del mundo.',
+          titulo: 'Tours Playa',
+          descripcion: 'Relájate en las playas más paradisíacas del mundo, donde el sol y el mar te esperan.',
           imagen: require('@/assets/images/playa.jpg')
         },
         {
-          titulo: 'Paquetes Pesca',
-          descripcion: 'Descubre la emoción de pescar en algunos de los destinos más espectaculares del mundo.',
+          titulo: 'Tours Pesca de Altura',
+          descripcion: 'Sumérgete en la rica cultura e historia de diversos lugares, explorando fascinantes tradiciones',
           imagen: require('@/assets/images/pesca.jpg')
         }
         

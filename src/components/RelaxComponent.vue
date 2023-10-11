@@ -4,7 +4,7 @@
         <h2>Tours Relax</h2>
 
         <div class="offert">
-          <img src="@/assets/images/maldivas.jpg" alt="Oferta Islas Maldivas">
+          <img src="../assets/images/maldivas.jpg" alt="Oferta Islas Maldivas">
           <h3>Islas Maldivas</h3>
           <p>Disfruta de unas vacaciones de ensueño en las hermosas Islas Maldivas, conocidas por sus playas de arena blanca, aguas cristalinas y bungalows sobre el agua. Un destino perfecto para relajarse y rejuvenecer durante 7 días y 6 noches en el paraíso.</p>
           <p>Algunas de las experiencias que podrás disfrutar en este increíble viaje incluyen:</p>
@@ -21,9 +21,9 @@
         </div>
 
         <div class="offert">
-          <img src="@/assets/images/bali.jpg" alt="Oferta Bali, Indonesia">
+          <img src="../assets/images/bali.jpg" alt="Oferta Bali, Indonesia">
           <h3>Bali, Indonesia</h3>
-          <p>Sumérgete en la cultura balinesa y la belleza natural de Bali. Este destino ofrece playas, templos antiguos y selvas exuberantes. Es ideal para aquellos que buscan paz y tranquilidad durante 8 días y 7 noches en el paraíso balinés.</p>
+           <p>Sumérgete en la cultura balinesa y la belleza natural de Bali. Este destino ofrece playas, templos antiguos y selvas exuberantes. Es ideal para aquellos que buscan paz y tranquilidad durante 8 días y 7 noches en el paraíso balinés.</p>
           <p>Algunas de las experiencias que podrás disfrutar en este increíble viaje incluyen:</p>
           <ul>
             <li>Clases de yoga al amanecer<br></li>
@@ -33,12 +33,12 @@
             <li>Recorridos por las playas locales<br></li>
             <li>Cenas gourmet con vista al océano<br></li>
           </ul>
-          <p>Tu viaje a Bali, Indonesia, será una experiencia única llena de cultura, belleza natural y relajación total.</p>
+          <p>Tu viaje a Bali, Indonesia, será una experiencia única llena de cultura, belleza de la naturaleza y relajación total.</p>
           <a href="formulario.html">Solicitar Presupuesto</a>
         </div>
 
         <div class="offert">
-          <img src="@/assets/images/Costa Amalfitana Italia.jpg" alt="Italia">
+          <img src="../assets/images/CostaAmalfitanaItalia.jpg" alt="Italia">
           <h3>Costa Amalfitana, Italia</h3>
           <p>Experimenta el encanto y la elegancia de la Costa Amalfitana en Italia. Con sus pintorescos pueblos costeros, deliciosa comida y hermosos paisajes, es un destino perfecto para relajarse durante 6 días y 5 noches en la costa italiana.</p>
           <p>Algunas de las experiencias que podrás disfrutar en este viaje incluyen:</p>
@@ -55,7 +55,7 @@
         </div>
 
         <div class="offert">
-          <img src="@/assets/images/playaTailandia.jpg" alt="Playas Paradisíacas de Tailandia">
+          <img src="../assets/images/playaTailandia.jpg" alt="Playas Paradisíacas de Tailandia">
           <h3>Playas Paradisíacas, Tailandia</h3>
           <p>Sumérgete en la belleza tropical de Tailandia con nuestro paquete a las Playas Paradisíacas. Descubre aguas cristalinas, playas de arena blanca y una cultura rica y fascinante durante 7 días y 6 noches en este paraíso tailandés.</p>
           <p>Algunas de las experiencias que podrás disfrutar en este increíble viaje incluyen:</p>
