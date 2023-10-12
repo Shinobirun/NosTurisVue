@@ -1,79 +1,77 @@
 
 <template>
-<section class="offerts">
-        <h2>Paquetes Relax</h2>
+ <section class="offerts">
+        <h2>Tours Relax</h2>
 
         <div class="offert">
-      <img src="../assets/images/maldivas.jpg" alt="Oferta Islas Maldivas">
-      <h3>Islas Maldivas</h3>
-      <p>Disfruta de unas vacaciones de ensueño en las hermosas Islas Maldivas, conocidas por sus playas de arena blanca,
-        aguas cristalinas y bungalows sobre el agua. Un destino perfecto para relajarse y rejuvenecer.</p>
-      <p>Duración: 7 días, 6 noches</p>
-      <div class="details">
-        <p>Actividades incluidas:</p>
-        <ul>
-          <li>Snorkeling en arrecifes de coral.</li>
-          <li>Masajes relajantes en la playa.</li>
-          <li>Cenas románticas con vistas al océano.</li>
-          <li>Excursiones en barco al atardecer.</li>
-        </ul>
-      </div>
-    </div>
+          <img src="../assets/images/maldivas.jpg" alt="Oferta Islas Maldivas">
+          <h3>Islas Maldivas</h3>
+          <p>Disfruta de unas vacaciones de ensueño en las hermosas Islas Maldivas, conocidas por sus playas de arena blanca, aguas cristalinas y bungalows sobre el agua. Un destino perfecto para relajarse y rejuvenecer durante 7 días y 6 noches en el paraíso.</p>
+          <p>Algunas de las experiencias que podrás disfrutar en este increíble viaje incluyen:</p>
+          <ul>
+            <li>Snorkeling en arrecifes de coral<br></li>
+            <li>Masajes relajantes en la playa<br></li>
+            <li>Cenas románticas con vistas al océano<br></li>
+            <li>Excursiones en barco al atardecer<br></li>
+            <li>Buceo en aguas cristalinas:<br></li>
+            <li>Visitas a islas locales<br></li>
+          </ul>
+          <p>¡Tu escapada a las Islas Maldivas será una experiencia inolvidable llena de relajación, aventuras submarinas y momentos románticos!</p>
+          <a href="formulario.html">Solicitar Presupuesto</a>
+        </div>
 
-    <div class="offert">
-      <img src="../assets/images/bali.jpg" alt="Oferta Bali, Indonesia">
-      <h3>Bali, Indonesia</h3>
-      <p>Sumérgete en la cultura balinesa y la belleza natural de Bali. Este destino ofrece playas, templos antiguos y
-        selvas exuberantes. Es ideal para aquellos que buscan paz y tranquilidad.</p>
-      <p>Duración: 8 días, 7 noches</p>
-      <div class="details">
-        <p>Actividades incluidas:</p>
-        <ul>
-          <li>Clases de yoga al amanecer.</li>
-          <li>Visitas a templos históricos.</li>
-          <li>Masajes balineses tradicionales.</li>
-          <li>Exploración de arrozales en terrazas.</li>
-        </ul>
+        <div class="offert">
+          <img src="../assets/images/bali.jpg" alt="Oferta Bali, Indonesia">
+          <h3>Bali, Indonesia</h3>
+           <p>Sumérgete en la cultura balinesa y la belleza natural de Bali. Este destino ofrece playas, templos antiguos y selvas exuberantes. Es ideal para aquellos que buscan paz y tranquilidad durante 8 días y 7 noches en el paraíso balinés.</p>
+          <p>Algunas de las experiencias que podrás disfrutar en este increíble viaje incluyen:</p>
+          <ul>
+            <li>Clases de yoga al amanecer<br></li>
+            <li>Visitas a templos históricos<br></li>
+            <li>Masajes balineses tradicionales <br></li>
+            <li>Exploración de arrozales en terrazas<br></li>
+            <li>Recorridos por las playas locales<br></li>
+            <li>Cenas gourmet con vista al océano<br></li>
+          </ul>
+          <p>Tu viaje a Bali, Indonesia, será una experiencia única llena de cultura, belleza de la naturaleza y relajación total.</p>
+          <a href="formulario.html">Solicitar Presupuesto</a>
+        </div>
 
-      </div>
-    </div>
+        <div class="offert">
+          <img src="../assets/images/CostaAmalfitanaItalia.jpg" alt="Italia">
+          <h3>Costa Amalfitana, Italia</h3>
+          <p>Experimenta el encanto y la elegancia de la Costa Amalfitana en Italia. Con sus pintorescos pueblos costeros, deliciosa comida y hermosos paisajes, es un destino perfecto para relajarse durante 6 días y 5 noches en la costa italiana.</p>
+          <p>Algunas de las experiencias que podrás disfrutar en este viaje incluyen:</p>
+          <ul>
+            <li>Degustación de vinos locales en las mas encantadores bodegas.<br></li>
+            <li>Excursiones en barco a las grutas de la costa.<br></li>
+            <li>Disfrute de la cocina italiana auténtica.<br></li>
+            <li>Tiempo libre en las playas locales.<br></li>
+            <li>Visitas a pintorescos pueblos costeros.<br></li>
+            <li>Paseos escénicos por los acantilados.<br></li>
+          </ul>
+          <p>Tu viaje a la Costa Amalfitana, Italia, será una experiencia de lujo y autenticidad en uno de los destinos más hermosos de Europa.</p>
+          <a href="formulario.html">Solicitar Presupuesto</a>
+        </div>
 
-    <div class="offert">
-      <img src="../assets/images/costaAlmafitana.jpg" alt="Oferta Costa Amalfitana, Italia">
-      <h3>Costa Amalfitana, Italia</h3>
-      <p>Experimenta el encanto y la elegancia de la Costa Amalfitana en Italia. Con sus pintorescos pueblos costeros,
-        deliciosa comida y hermosos paisajes, es un destino perfecto para relajarse.</p>
-      <p>Duración: 6 días, 5 noches</p>
-      <div class="details">
-        <p>Actividades incluidas:</p>
-        <ul>
-          <li>Degustación de vinos locales.</li>
-          <li>Excursiones en barco a las grutas de la costa.</li>
-          <li>Disfrute de la cocina italiana auténtica.</li>
-          <li>Tiempo libre en las playas locales.</li>
-        </ul>
+        <div class="offert">
+          <img src="../assets/images/playaTailandia.jpg" alt="Playas Paradisíacas de Tailandia">
+          <h3>Playas Paradisíacas, Tailandia</h3>
+          <p>Sumérgete en la belleza tropical de Tailandia con nuestro paquete a las Playas Paradisíacas. Descubre aguas cristalinas, playas de arena blanca y una cultura rica y fascinante durante 7 días y 6 noches en este paraíso tailandés.</p>
+          <p>Algunas de las experiencias que podrás disfrutar en este increíble viaje incluyen:</p>
+          <ul>
+            <li>Exploración de islas cercanas en kayak.<br></li>
+            <li>Clases de cocina tailandesa.<br></li>
+            <li>Relajación en spa de lujo con masajes tradicionales tailandeses.<br></li>
+            <li>Buceo en arrecifes de coral coloridos.<br></li>
+            <li>Visitas a mercados locales.<br></li>
+            <li>Excursiones a templos budistas impresionantes.<br></li>
+          </ul>
+          <p>Tu viaje a las Playas Paradisíacas de Tailandia será una experiencia inolvidable llena de relajación, aventuras submarinas y momentos culturales únicos.</p>
+          <a href="formulario.html">Solicitar Presupuesto</a>
+        </div>
 
-      </div>
-    </div>
-    <div class="offert">
-      <img src="../assets/images/lago.jpg" alt="Oferta Lago Louise">
-      <h3>Lago Louise</h3>
-      <p>Sumérgete en la belleza serena de Lago Louise, ubicado en las Montañas Rocosas de Canadá. Este destino es famoso
-        por sus aguas cristalinas y rodeado de majestuosas montañas. Un lugar perfecto.</p>
-      <p>Duración: 5 días, 4 noches</p>
-      <div class="details">
-        <p>Actividades incluidas:</p>
-        <ul>
-          <li>Paseos en canoa por el lago al atardecer.</li>
-          <li>Senderismo en los senderos de montaña.</li>
-          <li>Sesiones de yoga matutinas junto al lago.</li>
-          <li>Cenas románticas en restaurantes con vistas panorámicas.</li>
-        </ul>
-
-      </div>
-    </div>
-
-  </section>
+      </section>
 </template>
   
 <script>
